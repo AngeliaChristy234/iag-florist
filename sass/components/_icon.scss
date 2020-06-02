@@ -1,0 +1,24 @@
+.icon {
+  margin-bottom: 2.5rem;
+
+  > * {
+    max-width: 4rem;
+    height: auto;
+  }
+}
+
+.img {
+  &__logo {
+    display: none;
+
+    @include respond (tab-port) {
+      display: block;
+      height: 65vh;
+      width: 100%;
+      object-fit: contain;
+      margin: 0 auto;
+      box-shadow: 0 5px 16px rgba($black, 0.16);
+      margin-bottom: 5em;
+    }
+  }
+}
