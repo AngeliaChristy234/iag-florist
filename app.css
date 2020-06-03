@@ -1,0 +1,292 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Sidebar */
+#sidebar-logo {
+  height: auto;
+  width: 90%;
+}
+
+#sidebar-hr {
+  width: 90%;
+}
+
+#sidebar-menu {
+  padding-left: 1em;
+  font-size: 2em;
+}
+
+a {
+  color: #707070;
+}
+
+a:hover {
+  color: #404040;
+}
+
+#wrapper {
+  display: flex;
+  position: relative;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  background-color: #ffffff;
+}
+
+#sidebar {
+  width: 15%;
+  height: 100%;
+  position: fixed;
+}
+
+/* Title */
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "Dancing Script";
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 4em;
+  margin-top: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+#title-hr {
+  width: 80%;
+  margin-bottom: 4em;
+}
+
+h2 {
+  font-size: 3em;
+  margin-bottom: 10%;
+}
+
+#ikebana-title {
+  color: #b45c5c;
+}
+
+#eropa-title {
+  color: #5c66b4;
+}
+
+#freestyle-title {
+  color: #5cb485;
+}
+
+.description {
+  font-family: Baskerville;
+  font-size: 1em;
+  text-align: center;
+}
+
+/* Section */
+.section {
+  margin: 2em 3em;
+  margin-bottom: 10em;
+}
+
+.style-section {
+  padding: 0 5em;
+  margin-bottom: 5%;
+}
+
+/* Image and Button */
+/* Left Side */
+.btn-r-1 {
+  grid-area: button1;
+  justify-self: right;
+  margin-bottom: 0.5em;
+}
+
+.btn-r-2 {
+  grid-area: button2;
+  justify-self: right;
+  margin-bottom: 0.5em;
+}
+
+.btn-r-3 {
+  grid-area: button3;
+  align-self: center;
+  justify-self: right;
+}
+
+.left-display-img {
+  position: absolute;
+  z-index: 0;
+  max-width: 80%;
+  min-height: 100%;
+  grid-area: sec1;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-left: 15%;
+}
+
+/* Right section */
+.btn-l-1 {
+  grid-area: button1;
+  justify-self: left;
+  margin-bottom: 0.5em;
+}
+
+.btn-l-2 {
+  grid-area: button2;
+  justify-self: left;
+  margin-bottom: 0.5em;
+}
+
+.btn-l-3 {
+  grid-area: button3;
+  justify-self: left;
+}
+
+#eropa-display-img {
+  position: absolute;
+  z-index: 0;
+  max-width: 80%;
+  min-height: 100%;
+  grid-area: sec1;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  margin-left: 5%;
+}
+#eropa-section {
+  right: 0;
+}
+/* Grid Display  */
+.img-btn {
+  position: relative;
+  grid-area: sec1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 0.3fr;
+  grid-template-areas: "button1" "button2" "button3" "empty";
+}
+
+.all-img {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "sec1";
+}
+
+.img-btn button img {
+  height: 9em;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Animation */
+.hover-right:hover {
+  animation: moveToRight 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveToRight {
+  100% {
+    transform: translateX(2em);
+  }
+}
+
+.hover-left:hover {
+  animation: moveToLeft 0.5s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveToLeft {
+  100% {
+    transform: translateX(-2em);
+  }
+}
+
+/* Kontak */
+#kontak-div {
+  background-color: #f6bfb7;
+  color: white;
+  height: 15em;
+  padding: 3em 0 0 4em;
+  margin-bottom: 2em;
+}
+
+#kontak-div h4 {
+  font-size: 1.5em;
+}
+
+#kontak-div h3 {
+  font-size: 2.5em;
+}
+
+#kontak-kanan-div {
+  height: 15em;
+}
+
+#kontaknya-div {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  text-align: center;
+  align-content: center;
+  font-family: Baskerville;
+  font-size: 1.2em;
+  padding-top: 2em;
+}
+
+.icon {
+  margin-bottom: 1em;
+}
+
+.hover-up:hover {
+  animation: moveToUp 0.4s ease-in;
+  animation-fill-mode: forwards;
+}
+
+/* Animation */
+@keyframes moveToUp {
+  100% {
+    transform: translateY(-0.1em);
+  }
+}
+
+#icon-ph {
+  margin-right: 1em;
+}
+/* Instagram */
+#instagram-div {
+  background-color: #f6bfb7;
+  height: 6em;
+  color: white;
+  text-align: end;
+  padding: 2em 1.7em 0 0;
+  margin-bottom: 7em;
+}
+
+#instagram-kanan {
+  height: 6em;
+}
+
+#instagramnya-div {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-family: Baskerville;
+  font-size: 1.2em;
+  text-align: center;
+  padding-top: 1em;
+  padding-right: 5em;
+}
+
+#icon-instagram {
+  margin-bottom: 0.5em;
+}
+
+/* Tentang saya */
+#tentang-saya-div {
+  height: 20em;
+  background-color: #c7d3eb;
+  font-family: Baskerville;
+  padding: 3em 40% 0 4em;
+}
+
+#tentang-saya-title {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}

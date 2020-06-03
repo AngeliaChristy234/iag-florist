@@ -1,184 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>It's All Good Florist by Marina Mary</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/app.css">
-</head>
-<body>
-  <!-- JUST IMAGE -->
-  <img src="img/IAG-logo.jpg" alt="It's all good logo" class="img__logo">
-  
-  <div class="NMrow">
-    <!-- SIDEBAR -->
-    <nav class="col-1-of-4 sidebar" id='sidebar'>
-        <img src="img/IAG-logo.jpg" alt="It's all good logo" class="sidebar__logo">
-        <hr class="sidebar__ruler">
-        <ul class="sidebar__menu">
-          <li><a href="#ikebana" class="sidebar__menu-a">Ikebana</a></li>
-          <li><a href="#eropa" class="sidebar__menu-a">Eropa</a></li>
-          <li><a href="#freestyle" class="sidebar__menu-a">Freestyle</a></li>
-          <li><a href="#kontak" class="sidebar__menu-a">Kontak</a></li>
-          <li><a href="#tentang-saya" class="sidebar__menu-a">Tentang saya</a></li>
-        </ul>
-    </nav>
-    
-    <!-- CONTENT -->
-    <div class="col-3-of-4 margin-l-big">
-      <div class="title">
-        <h1 class="title__title">It's All Good Florist</h1>
-        <h2 class="title__title-mini">by <span>Marina Mary</span></h2>
-        <hr class="title__ruler">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="foundation.css" />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>It's All Good Florist</title>
+  </head>
+  <body>
+    <div class="grid-x">
+      <!-- SideBar -->
+      <div class="cell medium-3 large-2" id="wrapper">
+        <div id="sidebar">
+          <div class="grid-y">
+            <div class="cell medium-5">
+              <img src="img/IAG.jpg" id="sidebar-logo" />
+              <hr id="sidebar-hr" />
+            </div>
+            <div class="cell medium-7 large-10 grid-y" id="sidebar-menu">
+              <a href="#ikebana-section" id="ikebana">Ikebana</a>
+              <a href="#eropa-section" id="eropa">Eropa</a>
+              <a href="#freestyle-section" id="freestyle">Freestyle</a>
+              <a href="#kontak-div" id="kontak">Kontak</a>
+              <a href="#tentang-saya-div" id="tentang-saya">Tentang saya</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- IKEBANA -->
-      <section class="section section-ikebana" id='ikebana'>
-        <div class="row">
+      <!-- Big Mega Title -->
+      <div class="cell medium-9 large-10">
+        <h1>Hasil Karya</h1>
+        <hr id="title-hr" />
 
-          <!-- Image and Buttons -->
-          <div class="col-1-of-2">
-            <div class="display-l">
-              <img src="img/ikebana/i-1.JPG" alt="" class="display-l__img" id='ikebana-display'>
-              <div class="display-l__btn">
-                <button class="display-l__btn-each"><img src="img/ikebana/i-2.JPG" alt="" '></button>
-                <button class="display-l__btn-each"><img src="img/ikebana/i-3.JPG" alt="" '></button>
-                <button class="display-l__btn-each"><img src="img/ikebana/i-4.JPG" alt="" '></button>
-              </div>
-
+        <!-- Ikebana -->
+        <div class="grid-x section">
+          <div class="cell medium-6 all-img style-section" id="ikebana-section">
+            <div class="img-btn">
+              <button class="btn-r-1 hover-right" id="ikebana-btn1">
+                <img src="img/dummy.JPG" />
+              </button>
+              <button class="btn-r-2 hover-right" id="ikebana-btn2">
+                <img src="img/dummy.JPG" />
+              </button>
+              <button class="btn-r-3 hover-right" id="ikebana-btn3">
+                <img src="img/dummy.JPG" />
+              </button>
             </div>
+            <img class="left-display-img" src="img/dummy.JPG" />
           </div>
-
-          <!-- Ikebana title -->
-          <div class="col-1-of-2 section-text">
-            <h2 class="section__title section__title-ikebana">
-              Ikebana
-            </h2>
-            <ul class="section__desc">
-              <li class="section-desc-li">Rangkaian favorit</li>
-              <li class="section-desc-li">Rangkaian favorit</li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
-
-
-      <!-- EROPA -->
-      <section class="section section-eropa" id='eropa'>
-        <div class="row">
-
-          <!-- Image and Buttons -->
-          <div class="col-1-of-2 float__right">
-            <div class="display-r">
-              <img src="img/eropa/e-1.JPG" alt="" class="display-r__img" id='eropa-display'>
-              <div class="display-r__btn">
-                <button class="display-r__btn-each"><img src="img/eropa/e-2.JPG" alt="" '></button>
-                <button class="display-r__btn-each"><img src="img/eropa/e-3.JPG" alt="" '></button>
-                <button class="display-r__btn-each"><img src="img/eropa/e-4.JPG" alt="" '></button>
+          <div class="cell medium-6 grid-y">
+            <div class="cell small-4"></div>
+            <div class="cell small-4">
+              <h2 id="ikebana-title">Ikebana</h2>
+              <div class="description">
+                <p>Rangkaian Favorit</p>
+                <p>Lalala</p>
               </div>
             </div>
+            <div class="cell small-4"></div>
           </div>
-
-          <!-- Eropa title -->
-          <div class="col-1-of-2 section-text float__right">
-            <h2 class="section__title section__title-eropa">
-              Eropa
-            </h2>
-            <ul class="section__desc">
-              <li class="section-desc-li">Rangkaian favorit</li>
-              <li class="section-desc-li">Rangkaian favorit</li>
-            </ul>
-          </div>
-
         </div>
-      </section>
 
-      <!-- FREESTYLE -->
-      <section class="section section-freestyle" id='freestyle'>
-        <div class="row">
-
-          <!-- Image and Buttons -->
-          <div class="col-1-of-2">
-            <div class="display-l">
-              <img src="img/freestyle/f-1.JPG" alt="" class="display-l__img" id='freestyle-display'>
-              <div class="display-l__btn">
-                <button class="display-l__btn-each"><img src="img/freestyle/f-2.JPG" alt="" '></button>
-                <button class="display-l__btn-each"><img src="img/freestyle/f-3.JPG" alt="" '></button>
-                <button class="display-l__btn-each"><img src="img/freestyle/f-4.JPG" alt="" '></button>
+        <!-- Eropa -->
+        <div class="grid-x section">
+          <div class="cell medium-6 grid-y">
+            <div class="cell small-4"></div>
+            <div class="cell small-4">
+              <h2 id="eropa-title">Eropa</h2>
+              <div class="description">
+                <p>Rangkaian Favorit</p>
+                <p>Lalala</p>
               </div>
             </div>
+            <div class="cell small-4"></div>
           </div>
-
-          <!-- Freestyle title -->
-          <div class="col-1-of-2 section-text">
-            <h2 class="section__title section__title-freestyle">
-              Freestyle
-            </h2>
-            <ul class="section__desc">
-              <li class="section-desc-li">Rangkaian favorit</li>
-              <li class="section-desc-li">Rangkaian favorit</li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- KONTAK -->
-      <section class="section section__kontak" id='kontak'>
-
-        <!-- Kontaknya -->
-        <div class="row">
-
-          <!-- Kiri -->
-          <div class="col-1-of-2 section__kontak--kiri">
-            <h4 class="h4">Kontak saya untuk</h4>
-            <h3 class="h3">Pemesanan / kerja sama</h3>
-          </div>
-
-          <!-- Kanan -->
-          <div class="col-1-of-2 section__kontak--kanan">
-            <div class="icon">
-              <img src="img/phone.png" alt="" class="icon__phone">
-              <img src="img/whatsapp.png" alt="" class="icon__wa">
+          <div class="cell medium-6 all-img style-section" id="eropa-section">
+            <div class="img-btn">
+              <button class="hover-left btn-l-1" id="eropa-btn1">
+                <img src="img/dummy.JPG" />
+              </button>
+              <button class="hover-left btn-l-2" id="eropa-btn2">
+                <img src="img/dummy.JPG" />
+              </button>
+              <button class="hover-left btn-l-3" id="eropa-btn3">
+                <img src="img/dummy.JPG" />
+              </button>
             </div>
-            <p class="section__kontak--kanan-tlp">+62 891 0089</p>
-            <div class="icon">
-              <img src="img/email.png" alt="" class="icon__email">
-            </div>
-            <p class="section__kontak--kanan-email">christy58@gmail.com</p>
-          </div>
-
-        </div>
-        <!-- Social media -->
-        <div class="row">
-
-          <!-- Kiri -->
-          <div class="col-3-of-5 section__karya--kiri">
-            <h3 class="h3">Karya saya lainnya</h3>
-          </div>
-
-          <!-- Kanan -->
-          <div class="col-2-of-5 section__karya--kanan">
-            <div class="icon">
-              <img src="img/instagram.png" alt="" class="icon__instagram">
-            </div>
-            <p class="section__karya--kanan-instagram">@its_all_good_florist</p>
+            <img id="eropa-display-img" src="img/dummy.JPG" />
           </div>
         </div>
 
-      </section>
+        <!-- Freestyle -->
+        <div class="grid-x section">
+          <div
+            class="cell medium-6 all-img style-section"
+            id="freestyle-section"
+          >
+            <div class="img-btn">
+              <button class="btn-r-1 hover-right" id="freestyle-btn1">
+                <img src="img/dummy.JPG" />
+              </button>
+              <button class="btn-r-2 hover-right" id="freestyle-btn2">
+                <img src="img/dummy.JPG" />
+              </button>
+              <button class="btn-r-3 hover-right" id="freestyle-btn3">
+                <img src="img/dummy.JPG" />
+              </button>
+            </div>
+            <img class="left-display-img" src="img/dummy.JPG" />
+          </div>
+          <div class="cell medium-6 grid-y">
+            <div class="cell small-4"></div>
+            <div class="cell small-4">
+              <h2 id="freestyle-title">Freestyle</h2>
+              <div class="description">
+                <p>Rangkaian Favorit</p>
+                <p>Lalala</p>
+              </div>
+            </div>
+            <div class="cell small-4"></div>
+          </div>
+        </div>
 
-      <section class="section section__tentang-saya" id='tentang-saya'>
-        <h3 class="h3">Tentang saya</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, et ex in perferendis asperiores perspiciatis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, molestiae. </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eaque totam provident illum. Expedita, quis. Lorem ipsum dolor sit amet. </p>
-      </section>
+        <!-- Kontak -->
+
+        <!-- Kerja sama -->
+        <div class="grid-x">
+          <div class="cell medium-7" id="kontak-div">
+            <h4 class="hover-up">Kontak saya untuk</h4>
+            <h3 class="hover-up">Pemesanan / kerja sama</h3>
+          </div>
+          <div class="cell medium-5 grid-x" id="kontak-kanan-div">
+            <div class="cell medium-1"></div>
+            <div class="cell medium-11 hover-up" id="kontaknya-div">
+              <img src="img/ph.png" class="icon hover-up" id="icon-ph" />
+              <img src="img/whatsapp.png" class="icon hover-up" />
+              <p>+62 818-910-089</p>
+              <img src="img/email.png" class="icon hover-up" />
+              <p>christy58@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagram -->
+        <div class="grid-x">
+          <div class="cell medium-8" id="instagram-div">
+            <h3 class="hover-up">Karya saya lainnya</h3>
+          </div>
+          <div class="cell medium-4 grid-x" id="instagram-kanan">
+            <div class="cell medium-1"></div>
+            <div class="cell medium-11 hover-up" id="instagramnya-div">
+              <img
+                src="img/instagram.png"
+                class="hover-up"
+                id="icon-instagram"
+              />
+              <p>@its_all_good_florist</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tentang saya -->
+        <div id="tentang-saya-div">
+          <h3 class="hover-up" id="tentang-saya-title">Tentang Saya...</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            sint numquam corrupti, ducimus maxime, quos aliquam labore et optio
+            ea nesciunt voluptate ullam velit quia qui commodi perspiciatis
+            deserunt animi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At aliquid,
+            autem ipsum odit quisquam aliquam dicta vitae voluptatibus
+            laboriosam expedita culpa earum necessitatibus, et in nihil ullam
+            architecto? Inventore, repellat?
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
- 
-  <script src="app.js"></script>
-</body>
+  </body>
 </html>
